@@ -138,20 +138,7 @@ namespace FIO_Group
 
         private void Main_TB_TextChanged(object sender, TextChangedEventArgs e)
         {
-
             Update();
-        }
-
-        private void Main_TB_PreviewKeyUp(object sender, KeyEventArgs e)
-        {
-            /* if (e.Key == Key.) { }
-             if (e.Key == Key.Space) 
-             {
-                 int cur = Main_TB.CaretIndex;
-                 string mask = Main_TB.Mask;
-                 mask = string.Insert(cur, mask);
-                 //Main_TB.Mask[cur] += " ";
-             }*/
         }
 
         private void Group_TB_TextChanged(object sender, TextChangedEventArgs e)
