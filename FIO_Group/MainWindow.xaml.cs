@@ -58,7 +58,10 @@ namespace FIO_Group
             {
                 for (int i = 0; i < inputs.Length && i < 3; i++)
                 {
-                    _labels[i].Content = inputs[i];
+                    char[] temp = inputs[i].Trim().ToLower().ToCharArray();
+                    if (temp.Length <= 0) { continue; }
+                    temp[0] = char.ToUpper(temp[0]);
+                    _labels[i].Content = new string(temp);
                     _labels[i].Foreground = _green;
                 }
             }
